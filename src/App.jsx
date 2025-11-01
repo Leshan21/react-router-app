@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Navbar from "./pages/Navbar";
 import "./App.css"
 import { useState } from "react";
+import OrderConfirmed from "./pages/OrderConfirmed";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="about" element={<About/>}></Route>
+        <Route path="order-summery" element={<OrderConfirmed/>}></Route>
       </Routes>
       
       

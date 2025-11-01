@@ -7,6 +7,7 @@ import About from "./pages/About";
 // import Login from "./pages/Login";
 // import ProtectedRoute from "./components/ProtectedRoute";
 import Navbar from "./pages/Navbar";
+import "./App.css"
 import { useState } from "react";
 
 function App() {

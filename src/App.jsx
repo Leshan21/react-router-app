@@ -25,7 +25,12 @@ function App() {
 
         <hr />
 
-        
+        <Routes>
+          <Route path="/" element={<Home/>}></Route>
+          <Route path="/about" element={<About/>}></Route>
+          <Route path="/users" element={<Users/>}></Route>
+          <Route path="/users/:id" element={<UserDetail/>}></Route>
+        </Routes>
       </div>
     </>  
   )

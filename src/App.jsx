@@ -10,6 +10,7 @@ import Navbar from "./pages/Navbar";
 import "./App.css"
 import { useState } from "react";
 import OrderConfirmed from "./pages/OrderConfirmed";
+import NoMatchRoute from "./pages/NoMatchRoute";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -20,6 +21,9 @@ function App() {
         <Route path="/" element={<Home/>}></Route>
         <Route path="about" element={<About/>}></Route>
         <Route path="order-summery" element={<OrderConfirmed/>}></Route>
+
+
+        <Route path="*" element={<NoMatchRoute/>}></Route>
       </Routes>
       
       

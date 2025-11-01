@@ -6,12 +6,14 @@ import About from "./pages/About";
 // import Dashboard from "./pages/Dashboard";
 // import Login from "./pages/Login";
 // import ProtectedRoute from "./components/ProtectedRoute";
+import Navbar from "./pages/Navbar";
 import { useState } from "react";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="/about" element={<About/>}></Route>
